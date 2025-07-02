@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.teacher-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.teacher-table th,
+.teacher-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.teacher-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.teacher-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.pagination button:hover:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.pagination button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.pagination button.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.pagination-info {
+  margin: 0 15px;
+  font-size: 14px;
+  color: #666;
+}
+
+.loading {
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+}
+
+.error {
+  color: #dc3545;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #dc3545;
+  border-radius: 4px;
+  background-color: #f8d7da;
+  margin: 20px 0;
+}
